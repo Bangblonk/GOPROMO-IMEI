@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Star, CheckCircle, ArrowLeft, MessageCircle, Smartphone, Wifi } from "lucide-react";
+import { CartDrawer } from "@/components/cart-drawer";
 import Link from "next/link";
 
 export default function TestimoniPage() {
@@ -25,6 +26,7 @@ export default function TestimoniPage() {
               <Link href="/testimoni">
                 <Button variant="ghost">Testimoni</Button>
               </Link>
+              <CartDrawer />
             </div>
           </div>
         </div>
