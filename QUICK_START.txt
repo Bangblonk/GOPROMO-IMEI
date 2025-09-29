@@ -1,0 +1,53 @@
+GOPROMO-IMEI QUICK START GUIDE
+================================
+
+🚀 SUPER SIMPLE 3-STEP DEPLOYMENT:
+
+STEP 1: TEST LOCALLY
+-------------------
+1. Open terminal/command prompt
+2. Go to your project folder: cd /path/to/GOPROMO-IMEI
+3. Install: npm install
+4. Test: npm run dev
+5. Open http://localhost:3000 in browser
+6. Test all features, then press Ctrl+C to stop
+
+STEP 2: PUSH TO GITHUB
+---------------------
+1. Go to github.com, create new repository named "GOPROMO-IMEI"
+2. In terminal:
+   git init
+   git add .
+   git commit -m "Ready for deployment"
+   git remote add origin https://github.com/Bangblonk/GOPROMO-IMEI.git
+   git push -u origin main
+3. When asked for password, use GitHub Personal Access Token (not your password)
+
+STEP 3: DEPLOY TO VERCEL (EASIEST)
+---------------------------------
+1. Go to vercel.com
+2. Sign up with GitHub
+3. Click "New Project"
+4. Select "GOPROMO-IMEI" repository
+5. Click "Deploy"
+6. Wait 2-3 minutes
+7. YOUR APP IS LIVE! 🎉
+
+THAT'S IT! Your application will be live at:
+https://gpromo-imei-yourusername.vercel.app
+
+📱 FEATURES TO TEST ON LIVE SITE:
+- Homepage loads
+- Service pages work
+- Add to cart works
+- Cart drawer opens
+- Checkout form validates
+- WhatsApp integration works
+- Mobile responsive
+
+🎯 NEED HELP?
+- Check DEPLOYMENT.md for detailed guide
+- Check VERCEL_DEPLOYMENT.md for Vercel-specific help
+- Check STEP_BY_STEP_GUIDE.md for complete walkthrough
+
+GOOD LUCK! 🚀

@@ -1,0 +1,46 @@
+GOPROMO-IMEI Quick Commands
+==========================
+
+🚀 APPLICATION MANAGEMENT:
+-------------------------
+./node_modules/.bin/pm2 status          # Check status
+./node_modules/.bin/pm2 logs            # View logs
+./node_modules/.bin/pm2 restart gpromo-imei  # Restart app
+./node_modules/.bin/pm2 stop gpromo-imei     # Stop app
+./node_modules/.bin/pm2 start gpromo-imei    # Start app
+
+📊 MONITORING:
+------------
+./node_modules/.bin/pm2 monit           # Performance monitor
+./node_modules/.bin/pm2 info gpromo-imei   # App info
+./node_modules/.bin/pm2 flush           # Clear logs
+
+🌐 ACCESS URLS:
+-------------
+Local:  http://localhost:8080
+Public: http://47.239.117.210:8080
+
+🔧 CUSTOM SCRIPT:
+---------------
+bash manage-app.sh status      # Show status
+bash manage-app.sh start 8080  # Start on port 8080
+bash manage-app.sh stop        # Stop application
+bash manage-app.sh restart 8080 # Restart on port 8080
+bash manage-app.sh test 8080   # Test access
+bash manage-app.sh logs        # View logs
+
+📱 TESTING:
+----------
+curl -s http://localhost:8080          # Test local
+curl -s http://47.239.117.210:8080     # Test public
+
+🎯 IMPORTANT:
+-----------
+- App runs on port 8080
+- 4 instances for performance
+- Auto-restart enabled
+- Logs in ./logs/ directory
+- Production mode enabled
+
+🎉 YOUR APP IS LIVE!
+http://47.239.117.210:8080
