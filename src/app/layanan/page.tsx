@@ -87,6 +87,9 @@ export default function LayananPage() {
               <Link href="/layanan">
                 <Button variant="ghost">Layanan</Button>
               </Link>
+              <Link href="/testimoni">
+                <Button variant="ghost">Testimoni</Button>
+              </Link>
               <CartDrawer />
             </div>
           </div>
