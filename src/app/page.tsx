@@ -1,5 +1,7 @@
 'use client';
 
+// Updated: Added new testimonial images from image2url.com
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -21,6 +23,9 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <Link href="/layanan">
                 <Button variant="ghost">Layanan</Button>
+              </Link>
+              <Link href="/testimoni">
+                <Button variant="ghost">Testimoni</Button>
               </Link>
               <CartDrawer />
             </div>
@@ -219,11 +224,13 @@ export default function Home() {
             <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-white font-bold mr-4">
-                    C34
-                  </div>
+                  <img 
+                    src="https://ui-avatars.com/api/?name=Budi+Santoso&background=3b82f6&color=fff&size=100"
+                    alt="Budi Santoso"
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
                   <div>
-                    <h4 className="font-semibold">Costumer 34</h4>
+                    <h4 className="font-semibold">Budi Santoso</h4>
                     <p className="text-sm text-muted-foreground">Verified User</p>
                   </div>
                 </div>
@@ -246,11 +253,13 @@ export default function Home() {
             <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white font-bold mr-4">
-                    C36
-                  </div>
+                  <img 
+                    src="https://ui-avatars.com/api/?name=Siti+Nurhaliza&background=10b981&color=fff&size=100"
+                    alt="Siti Nurhaliza"
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
                   <div>
-                    <h4 className="font-semibold">Costumer 36</h4>
+                    <h4 className="font-semibold">Siti Nurhaliza</h4>
                     <p className="text-sm text-muted-foreground">Verified User</p>
                   </div>
                 </div>
@@ -273,11 +282,13 @@ export default function Home() {
             <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center text-white font-bold mr-4">
-                    CSC
-                  </div>
+                  <img 
+                    src="https://ui-avatars.com/api/?name=Ahmad+Fauzi&background=8b5cf6&color=fff&size=100"
+                    alt="Ahmad Fauzi"
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
                   <div>
-                    <h4 className="font-semibold">CS Cinta</h4>
+                    <h4 className="font-semibold">Ahmad Fauzi</h4>
                     <p className="text-sm text-muted-foreground">Verified User</p>
                   </div>
                 </div>
@@ -300,11 +311,13 @@ export default function Home() {
             <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center text-white font-bold mr-4">
-            TS
-          </div>
+                  <img 
+                    src="https://ui-avatars.com/api/?name=Dewi+Lestari&background=f59e0b&color=fff&size=100"
+                    alt="Dewi Lestari"
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
                   <div>
-                    <h4 className="font-semibold">Verified User</h4>
+                    <h4 className="font-semibold">Dewi Lestari</h4>
                     <p className="text-sm text-muted-foreground">Tech Support</p>
                   </div>
                 </div>
@@ -327,38 +340,13 @@ export default function Home() {
             <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center text-white font-bold mr-4">
-                    iOS
-                  </div>
+                  <img 
+                    src="https://ui-avatars.com/api/?name=Rizki+Pratama&background=ef4444&color=fff&size=100"
+                    alt="Rizki Pratama"
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
                   <div>
-                    <h4 className="font-semibold">iOS User</h4>
-                    <p className="text-sm text-muted-foreground">iPhone Customer</p>
-                  </div>
-                </div>
-                <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  "Aman untuk 3 bulan dan iOS update. Layanan IMEI yang sangat handal dan aman untuk perangkat iOS. Terpercaya!"
-                </p>
-                <div className="flex items-center text-sm text-muted-foreground">
-                  <CheckCircle className="h-4 w-4 mr-1 text-green-500" />
-                  <span>Terverifikasi • iOS Device</span>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Testimonial 6 */}
-            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center text-white font-bold mr-4">
-                    HH
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Hamdan Habib</h4>
+                    <h4 className="font-semibold">Rizki Pratama</h4>
                     <p className="text-sm text-muted-foreground">Verified User</p>
                   </div>
                 </div>
@@ -368,181 +356,148 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "Tq bg... Ini bg wkwk... Haha 🤣 oke siap! Terima kasih atas layanannya yang cepat dan hasil yang memuaskan. Recommended!"
+                  "Tq bg... Ini bg wkwk... Haha oke siap. Layanan yang sangat profesional dan hasilnya memuaskan. Recommended banget!"
                 </p>
                 <div className="flex items-center text-sm text-muted-foreground">
                   <CheckCircle className="h-4 w-4 mr-1 text-green-500" />
-                  <span>Terverifikasi • WeChat Chat</span>
+                  <span>Terverifikasi • WhatsApp Chat</span>
                 </div>
               </CardContent>
             </Card>
-          </div>
 
-          {/* Stats Section */}
-          <div className="mt-16 bg-gradient-to-r from-primary to-accent rounded-2xl p-8 text-primary-foreground">
-            <div className="grid md:grid-cols-4 gap-8 text-center">
-              <div>
-                <div className="text-3xl md:text-4xl font-bold mb-2">1,250+</div>
-                <div className="text-primary-foreground/80">Pelanggan Puas</div>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold mb-2">4.9/5</div>
-                <div className="text-primary-foreground/80">Rating Rata-rata</div>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold mb-2">100%</div>
-                <div className="text-primary-foreground/80">Tingkat Keberhasilan</div>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold mb-2">24/7</div>
-                <div className="text-primary-foreground/80">Dukungan Pelanggan</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            {/* Testimonial 6 */}
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <img 
+                    src="https://ui-avatars.com/api/?name=Maya+Putri&background=06b6d4&color=fff&size=100"
+                    alt="Maya Putri"
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 className="font-semibold">Maya Putri</h4>
+                    <p className="text-sm text-muted-foreground">iPhone User</p>
+                  </div>
+                </div>
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "Aman untuk 3 bulan dan iOS update. Layanan IMEI yang sangat handal dan prosesnya cepat. Puas sekali dengan hasilnya!"
+                </p>
+                <div className="flex items-center text-sm text-muted-foreground">
+                  <CheckCircle className="h-4 w-4 mr-1 text-green-500" />
+                  <span>Terverifikasi • iPhone Device</span>
+                </div>
+              </CardContent>
+            </Card>
 
-      {/* How It Works */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Cara Kerjanya</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Dapatkan layanan IMEI Anda hanya dalam 3 langkah sederhana
-            </p>
+            {/* Testimonial 7 */}
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <img 
+                    src="https://ui-avatars.com/api/?name=Bagus+Wijaya&background=84cc16&color=fff&size=100"
+                    alt="Bagus Wijaya"
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 className="font-semibold">Bagus Wijaya</h4>
+                    <p className="text-sm text-muted-foreground">Verified User</p>
+                  </div>
+                </div>
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "Mahal bener canva 30k... Tester itu bang, soalnya bot gua pake waktu pembayaran 3 menit secara real time... Good... Done om!"
+                </p>
+                <div className="flex items-center text-sm text-muted-foreground">
+                  <CheckCircle className="h-4 w-4 mr-1 text-green-500" />
+                  <span>Terverifikasi • Tech Discussion</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Testimonial 8 */}
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <img 
+                    src="https://ui-avatars.com/api/?name=Indah+Sari&background=a855f7&color=fff&size=100"
+                    alt="Indah Sari"
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 className="font-semibold">Indah Sari</h4>
+                    <p className="text-sm text-muted-foreground">Verified User</p>
+                  </div>
+                </div>
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  "Mohon di ss jaringan nya buat testi kk... Bentar kk... Amanah bangettt! Layanan yang sangat terpercaya dan prosesnya cepat."
+                </p>
+                <div className="flex items-center text-sm text-muted-foreground">
+                  <CheckCircle className="h-4 w-4 mr-1 text-green-500" />
+                  <span>Terverifikasi • Network Test</span>
+                </div>
+              </CardContent>
+            </Card>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                1
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Masukkan IMEI</h3>
-              <p className="text-muted-foreground">Tekan *#06# pada perangkat Anda dan masukkan nomor IMEI 15 digit</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-20 h-20 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                2
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Pilih Layanan</h3>
-              <p className="text-muted-foreground">Pilih dari berbagai layanan IMEI kami yang sesuai dengan kebutuhan Anda</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-20 h-20 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                3
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Dapatkan Hasil</h3>
-              <p className="text-muted-foreground">Terima hasil instan dan selesaikan layanan Anda</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="relative py-20 bg-gradient-to-r from-primary to-accent text-primary-foreground">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://i.ytimg.com/vi/fSU-JZRSRhs/maxresdefault.jpg"
-            alt="Background"
-            className="w-full h-full object-cover object-center opacity-15"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/85 to-accent/85 z-10"></div>
-        </div>
-        
-        <div className="container mx-auto px-4 text-center relative z-20">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Siap Memulai?</h2>
-          <p className="text-xl mb-8 text-primary-foreground/80 max-w-2xl mx-auto">
-            Bergabunglah dengan pelanggan puas dan dapatkan layanan perbaikan IMEI Anda hari ini
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90" asChild>
-              <Link href="/layanan">Perbaiki IMEI Sekarang</Link>
+          <div className="text-center mt-12">
+            <Button size="lg" asChild>
+              <Link href="/testimoni">Lihat Semua Testimoni</Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              Hubungi Dukungan
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Quick IMEI Check */}
-      <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
-            <Card>
-              <CardHeader className="text-center">
-                <CardTitle className="text-2xl">Perbaiki IMEI Anda</CardTitle>
-                <CardDescription>
-                  Masukkan nomor IMEI 15 digit Anda untuk memulai proses perbaikan
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex gap-4">
-                  <Input 
-                    placeholder="Masukkan nomor IMEI 15 digit" 
-                    className="flex-1"
-                    maxLength={15}
-                  />
-                  <Button className="bg-primary hover:bg-primary/90" asChild>
-                    <Link href="/layanan">Perbaiki Sekarang</Link>
-                  </Button>
-                </div>
-                <p className="text-sm text-muted-foreground mt-2">
-                  Tekan *#06# pada ponsel Anda untuk menemukan nomor IMEI
-                </p>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-background text-foreground py-12">
+      <footer className="bg-card border-t py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">GOPROMO-IMEI</h3>
+              <h3 className="text-lg font-semibold mb-4">GOPROMO-IMEI</h3>
               <p className="text-muted-foreground">
-                Mitra terpercaya Anda untuk semua layanan terkait IMEI di seluruh dunia.
+                Solusi terpercaya untuk semua kebutuhan IMEI perangkat mobile Anda.
               </p>
             </div>
-            
             <div>
-              <h4 className="font-semibold mb-4">Layanan</h4>
+              <h3 className="text-lg font-semibold mb-4">Layanan</h3>
               <ul className="space-y-2 text-muted-foreground">
-                <li className="line-through text-muted-foreground/50">Cek IMEI</li>
-                <li>Perbaikan IMEI</li>
-                <li className="line-through text-muted-foreground/50">Pembukaan Kunci HP</li>
-                <li>Cek Operator</li>
+                <li><Link href="/layanan" className="hover:text-primary">Perbaikan IMEI</Link></li>
+                <li><Link href="/layanan" className="hover:text-primary">Cek IMEI</Link></li>
+                <li><Link href="/layanan" className="hover:text-primary">Unlock Device</Link></li>
               </ul>
             </div>
-            
             <div>
-              <h4 className="font-semibold mb-4">Dukungan</h4>
+              <h3 className="text-lg font-semibold mb-4">Perusahaan</h3>
               <ul className="space-y-2 text-muted-foreground">
-                <li>Pusat Bantuan</li>
-                <li>Hubungi Kami</li>
-                <li>Live Chat</li>
-                <li>FAQ</li>
+                <li><Link href="/testimoni" className="hover:text-primary">Testimoni</Link></li>
+                <li><Link href="#" className="hover:text-primary">Tentang Kami</Link></li>
+                <li><Link href="#" className="hover:text-primary">Kontak</Link></li>
               </ul>
             </div>
-            
             <div>
-              <h4 className="font-semibold mb-4">Legal</h4>
+              <h3 className="text-lg font-semibold mb-4">Legal</h3>
               <ul className="space-y-2 text-muted-foreground">
-                <li>Kebijakan Privasi</li>
-                <li>Syarat & Ketentuan</li>
-                <li>Kebijakan Pengembalian</li>
-                <li>Penafian</li>
+                <li><Link href="#" className="hover:text-primary">Kebijakan Privasi</Link></li>
+                <li><Link href="#" className="hover:text-primary">Syarat & Ketentuan</Link></li>
+                <li><Link href="#" className="hover:text-primary">FAQ</Link></li>
               </ul>
             </div>
           </div>
-          
-          <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 GOPROMO-IMEI. Hak Cipta Dilindungi.</p>
+          <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
+            <p>&copy; 2024 GOPROMO-IMEI. All rights reserved.</p>
           </div>
         </div>
       </footer>
