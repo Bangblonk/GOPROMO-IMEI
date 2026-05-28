@@ -211,7 +211,7 @@ Silakan lakukan pembayaran dan kirim bukti transfer ke nomor WhatsApp ini. Terim
 
       // Send invoice to WhatsApp
       const whatsappMessage = generateWhatsAppMessage(invoiceData);
-      const whatsappUrl = `https://wa.link/xr8nec?text=${encodeURIComponent(whatsappMessage)}`;
+      const whatsappUrl = `https://wa.link/p3n45d?text=${encodeURIComponent(whatsappMessage)}`
       
       // Open WhatsApp in new tab
       window.open(whatsappUrl, '_blank');
