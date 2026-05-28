@@ -7,5 +7,6 @@
     "app/**/*": {
       "maxDuration": 30
     }
-  }
+  },
+  "ignoreCommand": "exit 1"
 }
